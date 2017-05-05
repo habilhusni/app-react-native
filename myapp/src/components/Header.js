@@ -22,17 +22,76 @@ class Header extends React.Component {
     const { navigate } = this.props.navigation;
     return (
       <View style = {styles.navbar}>
-
         <Text style={{textAlign: 'center', marginTop: 10, color: '#4a474b', fontSize: 22}}>
           { this.props.nama }
         </Text>
-        <Container style={{flex: 1, flexDirection: 'row', alignItems: 'center'}}>
+        <Container style={{flex: 1, flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
           <Content>
             <Button
-              block success
+              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
               onPress={() => navigate('Content')}
             >
-              <Text>Go to contents</Text>
+              <Text>Coldplay Content</Text>
+            </Button>
+            <Button
+              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
+              onPress={() => navigate('Content')}
+            >
+              <Text>Payung Teduh Content</Text>
+            </Button>
+            <Button
+              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
+              onPress={() => navigate('Content')}
+            >
+              <Text>Ed Sheeran Content</Text>
+            </Button>
+            <Button
+              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
+              onPress={() => navigate('Content')}
+            >
+              <Text>Zayn Content</Text>
+            </Button>
+            <Button
+              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
+              onPress={() => navigate('Content')}
+            >
+              <Text>Paramore Content</Text>
+            </Button>
+            <Button
+              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
+              onPress={() => navigate('Content')}
+            >
+              <Text>Eminem Content</Text>
+            </Button>
+            <Button
+              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
+              onPress={() => navigate('Content')}
+            >
+              <Text>Red Jumpsuit Apparatus Content</Text>
+            </Button>
+            <Button
+              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
+              onPress={() => navigate('Content')}
+            >
+              <Text>Bruno Mars Content</Text>
+            </Button>
+            <Button
+              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
+              onPress={() => navigate('Content')}
+            >
+              <Text>Twenty One Pilot Content</Text>
+            </Button>
+            <Button
+              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
+              onPress={() => navigate('Content')}
+            >
+              <Text>Raisa Content</Text>
+            </Button>
+            <Button
+              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
+              onPress={() => navigate('Content')}
+            >
+              <Text>Tulus Content</Text>
             </Button>
           </Content>
         </Container>
@@ -46,7 +105,7 @@ const styles = StyleSheet.create({
   navbar: {
     width: '100%',
     height: '1%',
-    flex: 1,
+    flex: 8,
     justifyContent: 'flex-start',
     backgroundColor: '#b7efff',
   },

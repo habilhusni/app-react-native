@@ -1,6 +1,6 @@
-import {getDatas, fetchData} from './nativeActionsCreator';
+import {getDataColdplay, fetchDataColdplay} from './nativeActionsCreator';
 
 export {
-  getDatas,
-  fetchData
+  getDataColdplay,
+  fetchDataColdplay
 };

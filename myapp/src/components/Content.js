@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux';
 
-import { fetchData } from '../actions/nativeActionsCreator';
+import { fetchDataColdplay } from '../actions/nativeActionsCreator';
 
 import {
   ScrollView,
@@ -28,7 +28,7 @@ class Content extends React.Component {
       <ScrollView>
 
         <View style = {styles.content}>
-          { this.props.datas.map((data, index) => (
+          { this.props.dataColdplay.map((data, index) => (
             <View key={index}>
               <Text style = {{ fontSize: 15, alignSelf: 'center' }}>
                 { index+1 }. { data.name }
@@ -61,7 +61,7 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  fetchData: () => dispatch(fetchData())
+  fetchData: () => dispatch(fetchDataColdplay())
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Content)

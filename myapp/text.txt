@@ -18,3 +18,26 @@ headerStyle: {
   flexDirection: 'row',
   justifyContent: 'center',
 }
+
+-Coldplay ID
+4gzpq5DPGxSnKTe4SA8HAU
+-Payung Teduh ID
+2Ooa3TrmlskyBftzenv6xQ
+-Ed Shereen ID
+6eUKZXaKkcviH0Ku9w2n3V
+-Zayn ID
+5ZsFI1h6hIdQRw2ti0hz81
+-paramore ID
+74XFHRwlV6OrjEM0A2NCMF
+-eminem ID
+7dGJo4pcD2V6oG8kP0tJRR
+-Red Jumpsuit Apparatus ID
+1SImpQO0GbjRgvlwCcCtFo
+-Bruno Mars ID
+0du5cEVh5yTK9QJze8zA0C
+-Twenty One Pilot ID
+3YQKmKGau1PzlVlkL1iodx
+-Raisa ID
+5OZXWMwDhlYBRvoOfcX0sk
+-Tulus
+2iDVt6mFbtbDEZG5ax0dTi

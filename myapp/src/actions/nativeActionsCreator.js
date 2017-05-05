@@ -1,15 +1,15 @@
 import axios from 'axios';
 
-import { GET_DATAS }  from './constants.js';
+import { GET_DATA_COLDPLAY }  from './constants.js';
 
-export const fetchData = () => dispatch => {
+export const fetchDataColdplay = () => dispatch => {
   // let url = 'https://api.spotify.com/v1/artists/4gzpq5DPGxSnKTe4SA8HAU/albums';
   axios.get('https://api.spotify.com/v1/artists/4gzpq5DPGxSnKTe4SA8HAU/albums')
-    .then(res =>  dispatch(getDatas(res.data.items)))
+    .then(res =>  dispatch(getDataColdplay(res.data.items)))
     .catch(err => { console.log(err)})
 }
 
-export const getDatas = datas => ({
-    type: GET_DATAS,
-    payload: datas
+export const getDataColdplay = dataColdplay => ({
+    type: GET_DATA_COLDPLAY,
+    payload: dataColdplay
 })

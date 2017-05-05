@@ -23,7 +23,7 @@ class Home extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Container>
+        <Container style={{ width: '100%',  backgroundColor: 'white' }}>
           <Header style={{ width: '100%' }}>
             <Left>
                 <Button transparent>
@@ -31,9 +31,8 @@ class Home extends Component {
                 </Button>
             </Left>
             <Body>
-              <Title>Header</Title>
+              <Title>Coldplay Albums</Title>
             </Body>
-            <Right />
           </Header>
         </Container>
         <Headers nama={this.state.name} navigation={this.props.navigation}/>
@@ -45,7 +44,7 @@ class Home extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 2,
+    flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
     backgroundColor: '#fff'
