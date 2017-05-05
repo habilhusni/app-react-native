@@ -1,0 +1,20 @@
+// <TouchableHighlight style={styles.touch}
+//   onPress={() => navigate('Content')}
+//   style={styles.touchText}
+// >
+//   <Text>Go to contents</Text>
+// </TouchableHighlight>
+{ uri: "https://i.scdn.co/image/9c2c4a9ac9726bfd996ff96383178bbb5efc59ab" }
+
+title: 'Home',
+headerTitleStyle: {
+   color: 'black',
+   flex: 1,
+   alignSelf: 'center',
+   marginTop: 10
+},
+headerStyle: {
+  backgroundColor: '#dddddd',
+  flexDirection: 'row',
+  justifyContent: 'center',
+}
