@@ -47,3 +47,45 @@ headerStyle: {
       <Icon name='menu' />
     </Button>
 </Left>
+
+<ScrollView>
+
+<Text style = {{ fontSize: 15, alignSelf: 'center' }}>
+  { index+1 }. { data.name }
+</Text>
+<Image
+  source={{ uri: data.images[0].url }}
+  style={{width: 400, height: 400}}
+/>
+
+{ this.props.datas.map((data, index) => (
+  <View key={index}>
+
+    <Card >
+      <CardItem>
+          <Left>
+              <Thumbnail source={logo} />
+              <Body>
+                  <Text>NativeBase</Text>
+                  <Text note>GeekyAnts</Text>
+              </Body>
+          </Left>
+        </CardItem>
+        <CardItem cardBody>
+            <Image/>
+        </CardItem>
+        <CardItem>
+            <Button transparent>
+                <Icon active name="thumbs-up" />
+                <Text>12 Likes</Text>
+            </Button>
+            <Button transparent>
+                <Icon active name="chatbubbles" />
+                <Text>4 Comments</Text>
+            </Button>
+            <Text>11h ago</Text>
+      </CardItem>
+     </Card>
+
+  </View>
+)) }
