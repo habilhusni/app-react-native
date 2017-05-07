@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux';
 
-import { fetchDataColdplay } from '../actions/nativeActionsCreator';
+import { fetchDataColdplay } from '../../actions/nativeActionsCreator';
 
 import {
   ScrollView,

@@ -6,14 +6,13 @@ import {
   TouchableHighlight,
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
-import { Container, Content, Icon, Button } from 'native-base';
+import { Container, Content, Icon, Button, Left, Body, Thumbnail, ListItem, Right } from 'native-base';
 
 import Contents from './Content'
 
 class Header extends React.Component {
   constructor(props) {
     super(props)
-    console.log(this.props);
   }
   static navigationOptions = {
     title: 'Welcome',
@@ -22,77 +21,140 @@ class Header extends React.Component {
     const { navigate } = this.props.navigation;
     return (
       <View style = {styles.navbar}>
-        <Text style={{textAlign: 'center', marginTop: 10, color: '#4a474b', fontSize: 22}}>
-          { this.props.nama }
-        </Text>
-        <Container style={{flex: 1, flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+        <Container style={{ flexDirection: 'row', alignItems: 'center', backgroundColor: '#b7efff' }}>
           <Content>
-            <Button
-              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
-              onPress={() => navigate('Content')}
+            <ListItem
+              avatar
+              style={{flex: 1, flexDirection: 'row', alignSelf: 'center'}}
+              onPress={() => navigate('Coldplay')}
             >
-              <Text>Coldplay Content</Text>
-            </Button>
-            <Button
-              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
-              onPress={() => navigate('Content')}
+              <Left>
+                <Thumbnail source={require('../img/coldplay.jpg')} />
+              </Left>
+              <Body>
+                <Text>Coldplay</Text>
+              </Body>
+            </ListItem>
+            <ListItem
+              avatar
+              style={{flex: 1, flexDirection: 'row', alignSelf: 'center'}}
+              onPress={() => navigate('PayungTeduh')}
             >
-              <Text>Payung Teduh Content</Text>
-            </Button>
-            <Button
-              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
-              onPress={() => navigate('Content')}
+              <Left>
+                <Thumbnail source={require('../img/payung-teduh.jpg')} />
+              </Left>
+              <Body>
+                <Text>Payung Teduh</Text>
+              </Body>
+            </ListItem>
+            <ListItem
+              avatar
+              style={{flex: 1, flexDirection: 'row', alignSelf: 'center'}}
+              onPress={() => navigate('EdSheeran')}
             >
-              <Text>Ed Sheeran Content</Text>
-            </Button>
-            <Button
-              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
-              onPress={() => navigate('Content')}
+              <Left>
+                <Thumbnail source={require('../img/edSheeran.jpg')} />
+              </Left>
+              <Body>
+                <Text>Ed Sheeran</Text>
+              </Body>
+            </ListItem>
+            <ListItem
+              avatar
+              style={{flex: 1, flexDirection: 'row', alignSelf: 'center'}}
+              onPress={() => navigate('Zayn')}
             >
-              <Text>Zayn Content</Text>
-            </Button>
-            <Button
-              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
-              onPress={() => navigate('Content')}
+              <Left>
+                <Thumbnail source={require('../img/zayn.jpg')} />
+              </Left>
+              <Body>
+                <Text>Zayn</Text>
+              </Body>
+            </ListItem>
+            <ListItem
+              avatar
+              style={{flex: 1, flexDirection: 'row', alignSelf: 'center'}}
+              onPress={() => navigate('Paramore')}
             >
-              <Text>Paramore Content</Text>
-            </Button>
-            <Button
-              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
-              onPress={() => navigate('Content')}
+              <Left>
+                <Thumbnail source={require('../img/paramore.jpg')} />
+              </Left>
+              <Body>
+                <Text>Paramore</Text>
+              </Body>
+            </ListItem>
+            <ListItem
+              avatar
+              style={{flex: 1, flexDirection: 'row', alignSelf: 'center'}}
+              onPress={() => navigate('Eminem')}
             >
-              <Text>Eminem Content</Text>
-            </Button>
-            <Button
-              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
-              onPress={() => navigate('Content')}
+              <Left>
+                <Thumbnail source={require('../img/eminem.jpg')} />
+              </Left>
+              <Body>
+                <Text>Eminem</Text>
+              </Body>
+            </ListItem>
+            <ListItem
+              avatar
+              style={{flex: 1, flexDirection: 'row', alignSelf: 'center'}}
+              onPress={() => navigate('RedJumpsuit')}
             >
-              <Text>Red Jumpsuit Apparatus Content</Text>
-            </Button>
-            <Button
-              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
-              onPress={() => navigate('Content')}
+              <Left>
+                <Thumbnail source={require('../img/redJumpsuit.jpg')} />
+              </Left>
+              <Body>
+                <Text>Red Jumpsuit Apparatus</Text>
+              </Body>
+            </ListItem>
+            <ListItem
+              avatar
+              style={{flex: 1, flexDirection: 'row', alignSelf: 'center'}}
+              onPress={() => navigate('BrunoMars')}
             >
-              <Text>Bruno Mars Content</Text>
-            </Button>
-            <Button
-              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
-              onPress={() => navigate('Content')}
+              <Left>
+                <Thumbnail source={require('../img/brunoMars.jpg')} />
+              </Left>
+              <Body>
+                <Text>Bruno Mars</Text>
+              </Body>
+            </ListItem>
+            <ListItem
+              avatar
+              style={{flex: 1, flexDirection: 'row', alignSelf: 'center'}}
+              onPress={() => navigate('TwentyOne')}
             >
-              <Text>Twenty One Pilot Content</Text>
-            </Button>
-            <Button
-              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
-              onPress={() => navigate('Content')}
+              <Left>
+                <Thumbnail source={require('../img/twentyOne.jpg')} />
+              </Left>
+              <Body>
+                <Text>Tweny One Pilot</Text>
+              </Body>
+            </ListItem>
+            <ListItem
+              avatar
+              style={{flex: 1, flexDirection: 'row', alignSelf: 'center'}}
+              onPress={() => navigate('Raisa')}
             >
-              <Text>Raisa Content</Text>
-            </Button>
-            <Button
-              style={{flex: 1, flexDirection: 'column', alignSelf: 'center'}}
-              onPress={() => navigate('Content')}
+              <Left>
+                <Thumbnail source={require('../img/raisa.jpg')} />
+              </Left>
+              <Body>
+                <Text>Raisa</Text>
+              </Body>
+            </ListItem>
+            <ListItem
+              avatar
+              style={{flex: 1, flexDirection: 'row', alignSelf: 'center'}}
+              onPress={() => navigate('Tulus')}
             >
-              <Text>Tulus Content</Text>
-            </Button>
+              <Left>
+                <Thumbnail source={require('../img/tulus.jpg')} />
+              </Left>
+              <Body>
+                <Text>Tulus</Text>
+              </Body>
+            </ListItem>
           </Content>
         </Container>
       </View>
@@ -105,8 +167,9 @@ const styles = StyleSheet.create({
   navbar: {
     width: '100%',
     height: '1%',
-    flex: 8,
-    justifyContent: 'flex-start',
+    flex: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: '#b7efff',
   },
   navbarChil: {

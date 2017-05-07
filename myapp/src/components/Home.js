@@ -25,18 +25,12 @@ class Home extends Component {
       <View style={styles.container}>
         <Container style={{ width: '100%',  backgroundColor: 'white' }}>
           <Header style={{ width: '100%' }}>
-            <Left>
-                <Button transparent>
-                  <Icon name='menu' />
-                </Button>
-            </Left>
-            <Body>
-              <Title>Coldplay Albums</Title>
+            <Body style={{ flexDirection: 'row', justifyContent: 'center' }}>
+              <Title>Albums Dictionary</Title>
             </Body>
           </Header>
         </Container>
         <Headers nama={this.state.name} navigation={this.props.navigation}/>
-        <Footer />
       </View>
     );
   }

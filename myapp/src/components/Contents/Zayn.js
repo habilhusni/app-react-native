@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux';
 
-import { fetchDataColdplay } from '../actions/nativeActionsCreator';
+import { fetchDataZayn } from '../../actions/nativeActionsCreator';
 
 import {
   ScrollView,
@@ -19,7 +19,7 @@ class Content extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchDataColdplay()
+    this.props.fetchDataZayn()
   }
 
   render() {
@@ -61,7 +61,7 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  fetchDataColdplay: () => dispatch(fetchDataColdplay())
+  fetchDataZayn: () => dispatch(fetchDataZayn())
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Content)
